@@ -19,5 +19,15 @@ public class FinanceDbContext(DbContextOptions<FinanceDbContext> options) : DbCo
 
         modelBuilder.Entity<Transaction>()
             .Property(transaction => transaction.Type).HasConversion<string>();
+
+        modelBuilder.Entity<Category>().HasData(
+            new Category { Id = 1, Name = "Salary" },
+            new Category { Id = 2, Name = "Transport" },
+            new Category { Id = 3, Name = "Utilities" },
+            new Category { Id = 4, Name = "Entertainment" },
+            new Category { Id = 5, Name = "Health" },
+            new Category { Id = 6, Name = "Rent" },
+            new Category { Id = 7, Name = "Food" },
+            new Category { Id = 8, Name = "Other" });
     }
 }

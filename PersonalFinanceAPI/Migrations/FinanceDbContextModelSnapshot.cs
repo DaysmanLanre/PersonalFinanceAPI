@@ -58,6 +58,48 @@ namespace PersonalFinanceAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Salary"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Transport"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Utilities"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Entertainment"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Health"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Rent"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Food"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Other"
+                        });
                 });
 
             modelBuilder.Entity("PersonalFinanceAPI.Entities.Transaction", b =>
