@@ -58,6 +58,13 @@ The credentials above are for local development only.
 | GET | /api/transactions/summary?year=&month= | Spending per category for a month |
 | POST / PUT / DELETE | /api/transactions | Manage transactions |
 
-## Screenshot
+## Screenshots
 
+### API documentation (Scalar)
 ![Scalar docs](docs/scalar.png)
+
+### Account balances
+![Account balances](docs/balances.png)
+
+### Monthly spending summary
+![Monthly summary](docs/summary.png)
